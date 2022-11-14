@@ -1,5 +1,6 @@
 'use strict';
 
+/* cache */
 const cache = {};
 chrome.tabs.onRemoved.addListener(tabId => delete cache[tabId]);
 
@@ -33,7 +34,7 @@ chrome.runtime.onMessage.addListener((request, sender, response) => {
   }
 });
 
-/* action */
+/* action to open popup */
 chrome.action.onClicked.addListener(tab => chrome.tabs.create({
   url: `data/popup/index.html?mode=tab`,
   index: tab.index + 1
