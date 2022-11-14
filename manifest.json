@@ -9,6 +9,7 @@
      "32": "data/icons/32.png"
   },
   "offline_enabled": true,
+  "homepage_url": "https://github.com/bdmostafa/chrome-ext-search-kw-in-tabs",
   "permissions": [
     "storage",
     "contextMenus",
